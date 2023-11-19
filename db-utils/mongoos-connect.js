@@ -13,9 +13,8 @@ const localMongoUrl='mongodb://localhost:27017/FSD101'
 const connectToDb = async () => {
     try {
         await mongoose.connect(cloudMongoUrl,
-            {
-                useNewUrlParser: true,
-            });
+            );
+            // {     useNewUrlParser: true,            }
         console.log("db Connecter successfully");
     } catch (err) {
         console.log(err);
